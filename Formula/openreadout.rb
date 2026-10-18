@@ -1,31 +1,30 @@
-# OpenReadout 0.1.0: installs the prebuilt, statically linked release binary.
-# Rendered from https://github.com/openreadout/openreadout/blob/main/packaging/homebrew/openreadout.rb
-
+# OpenReadout 0.4.0: installs the prebuilt, statically linked release binary.
+# Rendered from the template https://github.com/openreadout/openreadout/blob/main/packaging/homebrew/openreadout.rb
 class Openreadout < Formula
   desc "Read raw lab-instrument files and export them to open formats"
   homepage "https://github.com/openreadout/openreadout"
-  version "0.1.0"
+  version "0.4.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/openreadout/openreadout/releases/download/v0.1.0/openreadout-aarch64-apple-darwin.tar.gz"
-      sha256 "f74de553f2db8b3d440240993322e30e570af88129687076db73c23bdba8d3f0"
+      url "https://github.com/openreadout/openreadout/releases/download/v0.4.0/openreadout-aarch64-apple-darwin.tar.gz"
+      sha256 "0668cc71c9a93280d9b4dc0eb72f5e7e72ceb43a2f038587550aa727ab79b8d0"
     end
     on_intel do
-      url "https://github.com/openreadout/openreadout/releases/download/v0.1.0/openreadout-x86_64-apple-darwin.tar.gz"
-      sha256 "0563c53e2dbf8a1dcfddecf624222e5b66764bfba9a378196469980ed72ac8e3"
+      url "https://github.com/openreadout/openreadout/releases/download/v0.4.0/openreadout-x86_64-apple-darwin.tar.gz"
+      sha256 "7107822130023020825dde44502ef6845df66bfa852e672713aa3660077eb4c8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/openreadout/openreadout/releases/download/v0.1.0/openreadout-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7de9dde069fcf65d910f785eaa93bc252df72ec88199a3b49efaa9a4747204e5"
+      url "https://github.com/openreadout/openreadout/releases/download/v0.4.0/openreadout-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "d1576775a3e971d61ee5bec42cc7ba4ffbc04aa820bf4cb7bdd074d849dfd523"
     end
     on_intel do
-      url "https://github.com/openreadout/openreadout/releases/download/v0.1.0/openreadout-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "776fb7528609366adef5c5acfa0545797c561fbcd3c7d90b5ed32c9de533a202"
+      url "https://github.com/openreadout/openreadout/releases/download/v0.4.0/openreadout-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7696c3a923ba677f0b79ea32b2fb6d45f69c8950e2934f11cbbc3184eb636431"
     end
   end
 
